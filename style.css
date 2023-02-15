@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+:root{
+    font-size:62.5% ;
+
+    ---primary-color1: hsl(171, 66%, 44%);
+    ---primary-color2:hsl(233, 100%, 69%);
+    ---secondary-color1:hsl(210, 10%, 33%);
+    ---secondary-color:hsl(201, 11%, 66%);
+
+}
+
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+
+
+}
+
+
+h1{
+    font-size: 4.4rem;
+    color:var(---secondary-color1)
+}
+
+
+h2{
+    font-size: 3.4rem;
+    color:var(---secondary-color1)
+}
+
+
+h3{
+    font-size: 2.4rem;
+    color:var(---secondary-color1)
+}
+
+p{
+    font-size: 1.8rem;
+    color:var(---secondary-color)
+}
+
+
+
+
+
+
+.hero{
+    background-image: url("image/bg-header-desktop.png");
+    background-position: top;
+    background-size: cover;
+    
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 4rem;
+    padding: 20rem 0rem; 
+    margin: 0rem auto;
+}
+
+.hero-container{
+    text-align: center;
+}
+
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: var(---secondary-color1);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+}
+
+.btn-1 a{
+    display: inline-block;
+    background-color: var(---primary-color1);
+    color: white;
+    border-radius: 5rem;
+    padding: 1.6rem 3rem;
+    transition: all 0.4s ease-in-out ;
+
+}
+
+.btn-1 :hover{
+    
+    box-shadow: hsl(171, 72%, 76%) 0px 5px 15px;
+
+}
+
+
+.btn-2 a{
+    background-color: var(---primary-color2);
+    color: white;
+    border-radius: 5rem;
+    padding: 1.6rem 3rem;
+    transition: all 0.4s ease-in-out ;
+    
+}
+
+.btn-2 :hover{
+    box-shadow: hsl(233, 100%, 69%) 0px 5px 15px;
+   
+
+}
+
+
+.snippet-section{
+    height: 100rem;
+}
+
+
+
+.snippet-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;   
+    text-align: center;
+    padding-bottom: 3rem;
+   
+}
+
+
+
+.snippet-wrapper{
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+
+
+
+
+.access-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.access-content  h2{
+    padding: 4rem 0rem;
+   
+}
+
+
+.workflow-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.row{
+    display: flex;
+    gap: 3rem;
+    max-width: 80%;
+    margin: 6rem 0rem;
+}
+
+
+.col-1{
+    text-align: center;
+}
+.col-2{
+    text-align: center;
+}
+.col-3{
+    text-align: center;
+}
+
+
+.logos{
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 6rem auto;
+
+}
+
+.clipboard-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+   padding-top: 6rem;
+   margin: 3rem auto;
+
+}
+
+.clipboard-btns {
+    
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 4rem;
+
+}
+
+footer{
+  background-color: rgb(243, 243, 243);
+  margin-top: 10rem;
+}
+
+.footer-container{
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0rem;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-logo{
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+}
+
+ul {
+    
+    display: flex;
+    list-style: none;
+    gap: 6rem;
+    line-height: 3rem;
+   
+}
+
+ul :hover{
+    color: var(---primary-color1);
+}
+
+
+
+
+.social{
+    display: flex;
+    gap: 3rem;
+    cursor:context-menu;
+}
+
+
+
+
+
+
+
+@media  (max-width:375px) {
+
+   :root{
+    font-size: 50%;
+   }
+   .snippet-container{
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin: auto;
+   }
+
+    
+
+    
+}
